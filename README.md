@@ -1,2 +1,2 @@
 # binarysearch
-my binarysearch.com solutions
+my binarysearch.com solutions with runtime and space
