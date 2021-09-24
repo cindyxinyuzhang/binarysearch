@@ -1,8 +1,3 @@
-'''
-Given a list of integers nums, return whether you can rearrange the order of nums such that the difference between every consecutive two numbers is the same.
-
-Constraints: n ≤ 100,000 where n is the length of nums
-'''
 
 class Solution:
     def solve(self, nums):
