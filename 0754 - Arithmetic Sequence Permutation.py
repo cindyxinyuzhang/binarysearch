@@ -17,4 +17,4 @@ class Solution:
         return len(set(num2-num1 for num1, num2 in zip(sorted(nums),sorted(nums)[1:]))) == 1
 				
 #Time: O(nlogn)
-#Time: O(1)
+#Time: O(n)
