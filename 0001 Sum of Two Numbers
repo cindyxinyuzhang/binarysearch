@@ -7,3 +7,18 @@ class Solution:
             elif nums[l]+nums[r] < k: l += 1
             else: return True
         return False
+        
+        
+#Time: O(nlogn) sorting
+
+
+class Solution:
+    def solve(self, nums, k):
+        s = set()
+        for num in nums:
+            if k-num in s: return True
+            s.add(num)
+        return False
+        
+#Time: O(n)
+#Space: O(1)
