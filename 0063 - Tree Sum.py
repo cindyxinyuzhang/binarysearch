@@ -11,11 +11,6 @@ class Solution:
 # ^ recursive solution
 
 
-# class Tree:
-#     def __init__(self, val, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
 class Solution:
     def solve(self, root):
         if not root: return 0
@@ -31,3 +26,21 @@ class Solution:
         return ans
     
 # ^ iterative solution bfs
+
+
+class Solution:
+    def solve(self, root):
+        if not root: return 0
+        ans = 0
+        stack = [root]
+        while stack:
+            curr_node = stack.pop()
+            if curr_node.right:
+                stack.append(curr_node.right)
+            if curr_node.left:
+                stack.append(curr_node.left)
+            ans += curr_node.val
+            print(curr_node.val)
+        return ans
+    
+# ^ iterative solution dfs
