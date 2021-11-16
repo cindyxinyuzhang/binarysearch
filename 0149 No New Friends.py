@@ -4,4 +4,4 @@ class Solution:
         for friend1, friend2 in friends:
             people_set.add(friend1)
             people_set.add(friend2)
-        return all(person in people_set for person in range(n))
+        return len(people_set) == n
